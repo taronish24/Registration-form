@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Enter your Full name">
+                    </div>
+                    <div>
+                        <label>Email ID</label>
+                        <input type="text" name="email" id="email" placeholder="Enter your email id">
+                    </div>
+                    <div>
+                        <label>Gender</label>
+                        <input type="text" name="gender" id="gender" placeholder="Male / Female">
+                    </div>
+                    <div>
+                        <label>Skills</label>
+                        <input type="text" name="skills" id="skills" placeholder="HTML / CSS / Javascript">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email ID</th>
+                            <th>Gender</th>
+                            <th>Skills</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
